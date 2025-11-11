@@ -1,51 +1,46 @@
 # Ray Tracing Tutorial
 
 A step-by-step implementation of 2D ray tracing concepts.
+
+
 ![alt text](image.png)
 
 ## Overview
 
-This interactive tutorial demonstrates the fundamental concepts of ray tracing, from basic window creation to advanced intersection testing and secondary ray reflections. All implementations use only Python's standard library without any third-party frameworks.
+This tutorial demonstrates the fundamental concepts of ray tracing, from basic window creation to advanced intersection testing and secondary ray reflections. All implementations use only Python's standard library without any third-party frameworks.
 
 ## Features
 
 ### Step 1: Window Creation
-- Basic canvas setup with tkinter
-- Understanding the coordinate system
+- Basic canvas setup
 
 ### Step 2: Vector2D Class and Basic Shapes
 - Vector operations (addition, subtraction, dot product, normalization)
 - Drawing a single circle
 
-### Step 3: Multiple Objects
+### Step 3: Objects
 - Circle, Triangle, and Rectangle classes
-- Point-in-shape containment testing
 
 ### Step 4: Mouse Interaction
 - Drag and drop functionality
 - Real-time rendering loop (~60 FPS)
-- Interactive object movement
 
-### Step 5: Ray Class
+### Step 5: Generate Ray
 - Ray generation from a point
 - Ray equation: `P(t) = Origin + t * Direction`
-- Drawing rays in all directions
 
 ### Step 6: Light Source System
 - Interactive light source
 - Real-time ray regeneration
-- Combined light and object rendering
 
 ### Step 7: Ray Intersection and Shadows
-- Ray-circle intersection (quadratic equation)
-- Ray-segment intersection (for triangles and rectangles)
-- Shadow generation through intersection testing
+- Ray intersection (circle, triangle and rectangle)
+- Shadow generation through intersection
 
 ### Step 8: Secondary Ray Reflections
 - Reflection direction calculation
 - Surface normal computation for different shapes
 - Secondary rays colored by the object they hit
-- Multi-bounce ray visualization
 
 ## Requirements
 
@@ -57,7 +52,7 @@ This interactive tutorial demonstrates the fundamental concepts of ray tracing, 
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/raytracing-tutorial.git
+git clone https://github.com/SunWooChan/SimpleRayTracing.git
 cd raytracing-tutorial
 ```
 
@@ -93,16 +88,8 @@ jupyter notebook
 - **Reflection**: Physics-based light reflection using surface normals
 - **Real-time Rendering**: Event-driven GUI with continuous updates
 
-## Contributing
-
-Feel free to fork this project and add:
-- More geometric shapes
-- 3D ray tracing extensions
-- Advanced lighting models
-- Performance optimizations
-- Additional visual effects
-
 ## Acknowledgements
 
-This 
+This tutorial motivated by [Daniel Hirsch](https://www.youtube.com/watch?v=2BLRLuczykM&t=515s)
+
 
